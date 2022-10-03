@@ -22,8 +22,7 @@
         "android/build.gradle",
         "dist/",
         "ios/ByteowlsCapacitorOauth2/Source",
-        "ByteowlsCapacitorOauth2.podspec",
-        "src/"
+        "ByteowlsCapacitorOauth2.podspec"
     ],
     "keywords": [
         "capacitor",
