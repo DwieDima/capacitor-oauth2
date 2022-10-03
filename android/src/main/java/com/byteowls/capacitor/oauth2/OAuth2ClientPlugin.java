@@ -384,6 +384,9 @@ public class OAuth2ClientPlugin extends Plugin {
                                     if (oauth2Options.isLogsEnabled()) {
                                         Log.i(getLogTag(), "Access token response:\n" + accessTokenResponse.jsonSerializeString());
                                     }
+                                    if (this.authService == null) {
+                                        this.authService = new AuthorizationService(getContext());
+                                    }
                                     authState.performActionWithFreshTokens(authService,
                                         (accessToken, idToken, ex1) -> {
                                             AsyncTask<String, Void, ResourceCallResult> asyncTask =
